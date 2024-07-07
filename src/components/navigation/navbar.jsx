@@ -1,4 +1,4 @@
-import { Divider, Stack, Typography } from "@mui/joy";
+import { Stack, Typography } from "@mui/joy";
 
 
 export const Navbar = () => {
@@ -9,7 +9,7 @@ export const Navbar = () => {
           py: 1,
           flexDirection: "row",
           display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr);",
+          background: "red",
           zIndex: 10,
         }}
       >
@@ -26,12 +26,10 @@ export const Navbar = () => {
                 textAlign: "center",
               }}
             >
-              ONESBRYNEe
+              Check-attraction
             </Typography>
         </Stack>
       </Stack>
-
-      <Divider sx={{ mx: { xs: 2, lg: 10 } }} />
     </Stack>
   );
 };
