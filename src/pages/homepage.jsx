@@ -12,11 +12,13 @@ export const HomePage = () => {
           sx={{
             textAlign: "center",
             my: 3,
+            fontFamily: '"Kiwi Maru", serif',
+            padding: 2,
           }}
         >
           Create your own personal checklist for your favorite theme parks.
         </Typography>
-        <Button sx={{ width: "15%", my: 3 }}>Button</Button>
+        <Button sx={{ width: "13%", mt: 5, fontFamily: '"Kiwi Maru", serif', }}>Create Your Account</Button>
       </Stack>
       <Stack
         sx={{
