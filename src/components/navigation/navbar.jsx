@@ -3,14 +3,17 @@ import { Stack, Typography } from "@mui/joy";
 
 export const Navbar = () => {
   return (
-    <Stack component="nav">
+    <Stack component="nav" sx={{
+      py: 1,
+      flexDirection: "row",
+      display: "grid",
+      background: "pink",
+    }}>
       <Stack
         sx={{
           py: 1,
           flexDirection: "row",
-          display: "grid",
           background: "red",
-          zIndex: 10,
         }}
       >
         <Stack component="section" />
