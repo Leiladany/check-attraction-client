@@ -6,7 +6,7 @@ export const HomePage = () => {
 
   return (
     <Stack sx={{ gap: { xs: 1, lg: 3 } }}>
-      <Stack sx={{ my: 8 }}>
+      <Stack sx={{ alignItems: "center", my: 8 }}>
         <Typography
           level="h1"
           sx={{
@@ -16,7 +16,7 @@ export const HomePage = () => {
         >
           Create your own personal checklist for your favorite theme parks.
         </Typography>
-        <Button sx={{ my: 3 }}>Button</Button>
+        <Button sx={{ width: "15%", my: 3 }}>Button</Button>
       </Stack>
       <Stack
         sx={{
