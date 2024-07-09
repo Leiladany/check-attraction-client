@@ -3,15 +3,12 @@ import { Stack, Typography, Divider } from "@mui/joy";
 export const Footer = () => {
   return (
     <Stack component="footer">
-      <Divider sx={{ mx: { xs: 2, lg: 10 } }} />
 
       <Stack
         sx={{
           py: 2,
           display: "grid",
-          gridTemplateColumns: { xs: "1fr", lg: "repeat(3, 1fr);" },
-          zIndex: 10,
-          gap: { xs: 2, lg: 0 },
+          borderTop: "1px solid black",
         }}
       >
         <Stack
@@ -26,9 +23,6 @@ export const Footer = () => {
           sx={{
             flexDirection: "row",
             justifyContent: "center",
-            gap: 1,
-            gridColumn: { xs: "1", lg: "2" },
-            gridRow: { xs: "2", lg: "1" },
           }}
         >
           <Typography

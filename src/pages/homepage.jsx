@@ -18,7 +18,16 @@ export const HomePage = () => {
         >
           Create your own personal checklist for your favorite theme parks.
         </Typography>
-        <Button sx={{ width: "13%", mt: 5, fontFamily: '"Kiwi Maru", serif', }}>Create Your Account</Button>
+        <Button
+          sx={{
+            width: "13%",
+            mt: 5,
+            fontFamily: '"Kiwi Maru", serif',
+            backgroundColor: "#8A00F7",
+          }}
+        >
+          Create Your Account
+        </Button>
       </Stack>
       <Stack
         sx={{
