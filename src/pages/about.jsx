@@ -33,6 +33,8 @@ export const About = () => {
               left: "50%",
               transform: "translate(-50%, -50%)",
               zIndex: 2,
+              fontFamily: "Jacques Francois, sans-serif",
+              fontSize: "65px",
             }}
           >
             About
@@ -45,11 +47,16 @@ export const About = () => {
           sx={{
             textAlign: "center",
             my: 3,
-            fontFamily: '"Kiwi Maru", serif',
-            padding: 2,
+            fontFamily: "Jacques Francois, sans-serif",
+            padding: 1,
+            width: "55%",
           }}
         >
-          Create your own personal checklist for your favorite theme parks.
+          Welcome to CheckAttractions, where we've transformed the world of
+          theme park exploration into an exciting, personalized adventure just
+          for you! Established with a genuine passion for theme parks and the
+          joy they bring, CheckAttractions is your go-to platform for creating,
+          tracking, and optimizing your theme park experience.
         </Typography>
       </Stack>
       <Stack
@@ -81,22 +88,26 @@ export const About = () => {
           sx={{
             textAlign: "center",
             my: 3,
-            fontFamily: '"Kiwi Maru", serif',
-            padding: 2,
+            fontFamily: "Jacques Francois, sans-serif",
+            padding: 1,
           }}
         >
-          Create your own personal checklist for your favorite theme parks.
+          Our Mission
         </Typography>
         <Typography
           level="h3"
           sx={{
             textAlign: "center",
             my: 3,
-            fontFamily: '"Kiwi Maru", serif',
-            padding: 2,
+            fontFamily: "Jacques Francois, sans-serif",
+            padding: 1,
+            width: "60%",
           }}
         >
-          Create your own personal checklist for your favorite theme parks.
+          To immerse you in the magic of theme parks like never before. We're
+          dedicated to building the most extensive database of theme parks
+          globally, putting the power to plan your dream park day in the palm of
+          your hand.
         </Typography>
       </Stack>
       <Stack
@@ -128,22 +139,25 @@ export const About = () => {
           sx={{
             textAlign: "center",
             my: 3,
-            fontFamily: '"Kiwi Maru", serif',
-            padding: 2,
+            fontFamily: "Jacques Francois, sans-serif",
+            padding: 1,
           }}
         >
-          Create your own personal checklist for your favorite theme parks.
+          How It Works
         </Typography>
         <Typography
           level="h3"
           sx={{
             textAlign: "center",
             my: 3,
-            fontFamily: '"Kiwi Maru", serif',
-            padding: 2,
+            fontFamily: "Jacques Francois, sans-serif",
+            padding: 1,
+            width: "65%",
           }}
         >
-          Create your own personal checklist for your favorite theme parks.
+          Select your preferred parks from our vast list, choose the attractions
+          that excite you, and effortlessly mark them off as you conquer each
+          thrilling ride.
         </Typography>
       </Stack>
     </Stack>
