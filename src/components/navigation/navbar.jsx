@@ -2,12 +2,12 @@ import React from "react";
 import {
   Box,
   Stack,
-  Typography,
   Dropdown,
   MenuButton,
   Menu,
   MenuItem,
 } from "@mui/joy";
+import logoattraction from "../../assets/logoattraction.png";
 import { FaMasksTheater } from "react-icons/fa6";
 import { Link as RouterLink } from "react-router-dom";
 import Link from "@mui/joy/Link";
@@ -51,24 +51,16 @@ export const Navbar = () => {
         }}
       >
         <Box sx={{ pr: { xs: 1, lg: 3 } }}>
-          {/* You can add a logo or any other section here */}
+          <Link href="/" height="60px" width="100px">
+            <img src={logoattraction} alt="Logo" width="130%" />
+          </Link>
         </Box>
-        <Typography
-          variant="h1"
-          sx={{
-            fontFamily: "italiana, sans-serif",
-            fontWeight: "lighter",
-            fontSize: { xs: "24px", lg: "32px" },
-            textAlign: "center",
-            color: "#232849",
-          }}
-        >
-          Check-attraction
-        </Typography>
       </Stack>
 
       {/* Desktop Navigation Links */}
-      <Box sx={{ display: { xs: "none", lg: "flex" }, justifyContent: "center" }}>
+      <Box
+        sx={{ display: { xs: "none", lg: "flex" }, justifyContent: "center" }}
+      >
         <Stack
           sx={{
             flexDirection: "row",
