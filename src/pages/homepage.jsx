@@ -20,7 +20,7 @@ export const HomePage = () => {
         </Typography>
         <Button
           sx={{
-            width: "13%",
+            width: "15%",
             mt: 5,
             fontFamily: '"Kiwi Maru", serif',
             backgroundColor: "#8A00F7",
