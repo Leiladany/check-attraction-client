@@ -6,12 +6,12 @@ export const HomePage = () => {
 
   return (
     <Stack sx={{ gap: { xs: 1, lg: 3 } }}>
-      <Stack sx={{ alignItems: "center", my: 8 }}>
+      <Stack sx={{ alignItems: "center", mt: 8 }}>
         <Typography
           level="h1"
           sx={{
             textAlign: "center",
-            my: 3,
+            mt: 3,
             fontFamily: '"Kiwi Maru", serif',
             padding: 2,
           }}
