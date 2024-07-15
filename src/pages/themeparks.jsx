@@ -2,6 +2,9 @@ import React from "react";
 import { Box, Stack, Typography, styled } from "@mui/joy";
 import banner2 from "../assets/banner2.png";
 import DLP from "../assets/DLP.png";
+import WDW from "../assets/WDW.png";
+import DL from "../assets/DL.png";
+import PAW from "../assets/PAW.png";
 
 const HoverImage = styled("img")({
   width: "90%",
@@ -18,10 +21,14 @@ export const ThemeParks = () => {
   const images = [
     { src: banner2, alt: "banner2" },
     { src: DLP, alt: "DLP" },
+    { src: WDW, alt: "WDW" },
+    { src: DL, alt: "DL" },
+    { src: PAW, alt: "PAW" },
   ];
 
   return (
     <Stack sx={{ gap: { xs: 1, lg: 3 } }}>
+    <Stack>
       <Stack
         sx={{
           width: "100%",
@@ -53,12 +60,14 @@ export const ThemeParks = () => {
           </Typography>
         </Box>
       </Stack>
+      {/* Disneyland Paris */}
       <Stack
         sx={{
           width: "100%",
           flexDirection: { xs: "column", lg: "row" },
           justifyContent: "center",
           gridTemplateColumns: "1fr 1fr",
+          my: 5,
         }}
       >
         <Stack sx={{ width: "50%", justifyContent: "center" }}>
@@ -76,6 +85,85 @@ export const ThemeParks = () => {
         >
           <HoverImage src={images[1].src} alt={images[1].alt} />
         </Stack>
+      </Stack>
+      {/* Disney World */}
+      <Stack
+        sx={{
+          width: "100%",
+          flexDirection: { xs: "column", lg: "row" },
+          justifyContent: "center",
+          gridTemplateColumns: "1fr 1fr",
+          my: 5,
+        }}
+      >
+        <Stack sx={{ width: "50%", justifyContent: "center" }}>
+          <Typography level="h2" sx={{ textAlign: "center" }}>
+            Walt Disney World
+          </Typography>
+        </Stack>
+        <Stack
+          sx={{
+            display: "flex",
+            width: "50%",
+            height: { xs: "auto" },
+            alignItems: "end",
+          }}
+        >
+          <HoverImage src={images[2].src} alt={images[2].alt} />
+        </Stack>
+      </Stack>
+      {/* Disneyland */}
+      <Stack
+        sx={{
+          width: "100%",
+          flexDirection: { xs: "column", lg: "row" },
+          justifyContent: "center",
+          gridTemplateColumns: "1fr 1fr",
+          my: 5,
+        }}
+      >
+        <Stack sx={{ width: "50%", justifyContent: "center" }}>
+          <Typography level="h2" sx={{ textAlign: "center" }}>
+            Disneyland
+          </Typography>
+        </Stack>
+        <Stack
+          sx={{
+            display: "flex",
+            width: "50%",
+            height: { xs: "auto" },
+            alignItems: "end",
+          }}
+        >
+          <HoverImage src={images[3].src} alt={images[3].alt} />
+        </Stack>
+      </Stack>
+      {/* PortAventura */}
+      <Stack
+        sx={{
+          width: "100%",
+          flexDirection: { xs: "column", lg: "row" },
+          justifyContent: "center",
+          gridTemplateColumns: "1fr 1fr",
+          my: 5,
+        }}
+      >
+        <Stack sx={{ width: "50%", justifyContent: "center" }}>
+          <Typography level="h2" sx={{ textAlign: "center" }}>
+            PortAventura World
+          </Typography>
+        </Stack>
+        <Stack
+          sx={{
+            display: "flex",
+            width: "50%",
+            height: { xs: "auto" },
+            alignItems: "end",
+          }}
+        >
+          <HoverImage src={images[4].src} alt={images[4].alt} />
+        </Stack>
+      </Stack>
       </Stack>
     </Stack>
   );
