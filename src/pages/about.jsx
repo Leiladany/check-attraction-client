@@ -23,7 +23,12 @@ export const About = () => {
           <img
             src={images[0].src}
             alt={images[0].alt}
-            style={{ width: "100%", height: "100%", objectFit: "fill" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "fill",
+              filter: "contrast(0.9)",
+            }}
           />
           <Typography
             level="h1"
