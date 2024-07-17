@@ -92,7 +92,7 @@ export const About = () => {
           level="h2"
           sx={{
             textAlign: "center",
-            my: 3,
+            mt: 3,
             fontFamily: "Jacques Francois, sans-serif",
             padding: 1,
           }}
@@ -143,7 +143,7 @@ export const About = () => {
           level="h2"
           sx={{
             textAlign: "center",
-            my: 3,
+            mt: 3,
             fontFamily: "Jacques Francois, sans-serif",
             padding: 1,
           }}
@@ -155,6 +155,7 @@ export const About = () => {
           sx={{
             textAlign: "center",
             my: 3,
+            mb: 5,
             fontFamily: "Jacques Francois, sans-serif",
             padding: 1,
             width: "65%",
