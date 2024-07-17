@@ -24,6 +24,15 @@ export const HomePage = () => {
             mt: 5,
             fontFamily: '"Kiwi Maru", serif',
             backgroundColor: "#8A00F7",
+            "&:hover": {
+              backgroundColor: "#6402b2",
+            },
+            "&:focus": {
+              outline: "none",
+            },
+            "&:active": {
+              outline: "none",
+            },
           }}
         >
           Create Your Account
