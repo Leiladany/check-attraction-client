@@ -26,6 +26,7 @@ export const HomePage = () => {
             backgroundColor: "#8A00F7",
             "&:hover": {
               backgroundColor: "#6402b2",
+              boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.2)",
             },
             "&:focus": {
               outline: "none",
