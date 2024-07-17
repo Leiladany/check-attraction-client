@@ -20,10 +20,10 @@ const HoverImage = styled("img")({
 export const ThemeParks = () => {
   const images = [
     { src: banner2, alt: "banner2" },
-    { src: DLP, alt: "DLP" },
-    { src: WDW, alt: "WDW" },
-    { src: DL, alt: "DL" },
-    { src: PAW, alt: "PAW" },
+    { src: DLP, alt: "DLP", link: "https://www.disneylandparis.com" },
+    { src: WDW, alt: "WDW", link: "https://www.disneyworld.disney.go.com" },
+    { src: DL, alt: "DL", link: "https://disneyland.disney.go.com" },
+    { src: PAW, alt: "PAW", link: "https://www.portaventuraworld.com" },
   ];
 
   return (
@@ -95,7 +95,14 @@ export const ThemeParks = () => {
               alignItems: "end",
             }}
           >
-            <HoverImage src={images[1].src} alt={images[1].alt} />
+            <a
+              href={images[1].link}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "contents", width: "100%", height: "100%" }}
+            >
+              <HoverImage src={images[1].src} alt={images[1].alt} />
+            </a>
           </Stack>
         </Stack>
         {/* Disney World */}
@@ -128,7 +135,14 @@ export const ThemeParks = () => {
               alignItems: "end",
             }}
           >
-            <HoverImage src={images[2].src} alt={images[2].alt} />
+            <a
+              href={images[2].link}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "contents", width: "100%", height: "100%" }}
+            >
+              <HoverImage src={images[2].src} alt={images[2].alt} />
+            </a>
           </Stack>
         </Stack>
         {/* Disneyland */}
@@ -161,7 +175,14 @@ export const ThemeParks = () => {
               alignItems: "end",
             }}
           >
-            <HoverImage src={images[3].src} alt={images[3].alt} />
+            <a
+              href={images[3].link}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "contents", width: "100%", height: "100%" }}
+            >
+              <HoverImage src={images[3].src} alt={images[3].alt} />
+            </a>
           </Stack>
         </Stack>
         {/* PortAventura */}
@@ -194,7 +215,14 @@ export const ThemeParks = () => {
               alignItems: "end",
             }}
           >
-            <HoverImage src={images[4].src} alt={images[4].alt} />
+            <a
+              href={images[4].link}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "contents", width: "100%", height: "100%" }}
+            >
+              <HoverImage src={images[4].src} alt={images[4].alt} />
+            </a>
           </Stack>
         </Stack>
       </Stack>
