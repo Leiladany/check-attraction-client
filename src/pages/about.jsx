@@ -51,7 +51,7 @@ export const About = () => {
           level="h3"
           sx={{
             textAlign: "center",
-            my: 3,
+            my: 1,
             fontFamily: "Jacques Francois, sans-serif",
             padding: 1,
             width: "55%",
@@ -87,7 +87,7 @@ export const About = () => {
           />
         </Box>
       </Stack>
-      <Stack sx={{ alignItems: "center", my: 8 }}>
+      <Stack sx={{ alignItems: "center" }}>
         <Typography
           level="h2"
           sx={{
@@ -138,7 +138,7 @@ export const About = () => {
           />
         </Box>
       </Stack>
-      <Stack sx={{ alignItems: "center", my: 8 }}>
+      <Stack sx={{ alignItems: "center" }}>
         <Typography
           level="h2"
           sx={{
