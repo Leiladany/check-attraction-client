@@ -8,7 +8,6 @@ import {
   MenuItem,
 } from "@mui/joy";
 import logoattraction from "../../assets/logoattraction.png";
-import { FaMasksTheater } from "react-icons/fa6";
 import { Link as RouterLink } from "react-router-dom";
 import Link from "@mui/joy/Link";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -34,30 +33,30 @@ export const Navbar = () => {
     <Stack
       component="nav"
       sx={{
-        py: 1,
         flexDirection: "row",
         display: "grid",
         borderBottom: "1px solid black",
         justifyContent: { xs: "space-between" },
         gridTemplateColumns: { xs: "1fr 1fr", lg: "1fr 1fr 1fr" },
+        fontFamily: "Jacques Francois, sans-serif",
+        fontSize: "17px",
+        color: "black",
       }}
     >
-      {/* Logo and Title */}
       <Stack
         sx={{
-          py: 1,
+          pt: 1,
           flexDirection: "row",
           alignItems: "center",
         }}
       >
         <Box sx={{ pr: { xs: 1, lg: 3 } }}>
           <Link href="/" height="60px" width="100px">
-            <img src={logoattraction} alt="Logo" width="130%" />
+            <img src={logoattraction} alt="Logo" width="110%" />
           </Link>
         </Box>
       </Stack>
 
-      {/* Desktop Navigation Links */}
       <Box
         sx={{ display: { xs: "none", lg: "flex" }, justifyContent: "center" }}
       >
@@ -71,13 +70,13 @@ export const Navbar = () => {
         >
           {links.map((link) => (
             <RouterLink
-              key={link.id} // Assign a unique key based on an identifier (e.g., id or unique label)
+              key={link.id}
               to={link.href}
               onMouseEnter={() => handleMouseEnter(link.id)}
               onMouseLeave={handleMouseLeave}
-              sx={{
+              style={{
                 position: "relative",
-                color: "#232849",
+                color: "black",
                 textDecoration: "none",
                 "&:hover .icon": {
                   display: "inline-block",
@@ -99,7 +98,6 @@ export const Navbar = () => {
                   color: "white",
                 }}
               >
-                <FaMasksTheater />
               </span>
               {link.label}
               <span
@@ -110,17 +108,16 @@ export const Navbar = () => {
                   right: "-20px",
                   bottom: "35px",
                   verticalAlign: "middle",
-                  color: "black",
+                  color: "black",  // Apply black color here
                 }}
               >
-                <FaMasksTheater />
               </span>
             </RouterLink>
           ))}
         </Stack>
       </Box>
 
-      {/* Mobile Navigation (Dropdown Menu) */}
+      {/* Mobile */}
       <Box sx={{ display: { xs: "flex", lg: "none" } }}>
         <Dropdown>
           <MenuButton
@@ -135,14 +132,13 @@ export const Navbar = () => {
             {links.map((link) => (
               <MenuItem key={link.id}>
                 {" "}
-                {/* Ensure each MenuItem has a unique key */}
                 <Link
                   href={link.href}
                   onMouseEnter={() => handleMouseEnter(link.id)}
                   onMouseLeave={handleMouseLeave}
                   sx={{
                     position: "relative",
-                    color: "#232849",
+                    color: "black",  // Apply black color here
                     textDecoration: "none",
                     "&:hover .icon": {
                       display: "inline-block",
@@ -165,7 +161,6 @@ export const Navbar = () => {
                       color: "white",
                     }}
                   >
-                    <FaMasksTheater />
                   </span>
                   {link.label}
                   <span
@@ -180,7 +175,6 @@ export const Navbar = () => {
                       color: "white",
                     }}
                   >
-                    <FaMasksTheater />
                   </span>
                 </Link>
               </MenuItem>
