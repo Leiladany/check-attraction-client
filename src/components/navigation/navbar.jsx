@@ -16,6 +16,7 @@ export const Navbar = () => {
   const links = [
     { id: "about", label: "About", href: "/about" },
     { id: "themeparks", label: "Theme Parks", href: "/themeparks" },
+    { id: "Lists", label: "Lists", href: "/listpage" },
     { id: "contacts", label: "Contacts", href: "/contacts" },
   ];
 
@@ -108,7 +109,7 @@ export const Navbar = () => {
                   right: "-20px",
                   bottom: "35px",
                   verticalAlign: "middle",
-                  color: "black",  // Apply black color here
+                  color: "black",
                 }}
               >
               </span>
@@ -138,7 +139,7 @@ export const Navbar = () => {
                   onMouseLeave={handleMouseLeave}
                   sx={{
                     position: "relative",
-                    color: "black",  // Apply black color here
+                    color: "black",
                     textDecoration: "none",
                     "&:hover .icon": {
                       display: "inline-block",

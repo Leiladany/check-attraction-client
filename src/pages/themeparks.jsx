@@ -66,7 +66,7 @@ export const ThemeParks = () => {
           </Box>
         </Stack>
         <Stack sx={{alignItems:"flex-end", my:2}}>
-        <Input sx={{width:"180px", mr:"20px", borderRadius:"20px", border:"2px solid #8A00F7"}} />
+        <Input sx={{width:"180px", mr:"20px", borderRadius:"20px", border:"2px solid #8A00F7"}} placeholder="Search Theme Park" />
         </Stack>
         {/* Disneyland Paris */}
         <Stack
