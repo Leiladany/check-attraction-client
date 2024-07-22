@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack, Typography, styled } from "@mui/joy";
+import { Box, Stack, Typography, styled, Input } from "@mui/joy";
 import banner2 from "../assets/banner2.png";
 import DLP from "../assets/DLP.png";
 import WDW from "../assets/WDW.png";
@@ -64,6 +64,9 @@ export const ThemeParks = () => {
               Theme Parks
             </Typography>
           </Box>
+        </Stack>
+        <Stack sx={{alignItems:"flex-end", my:2}}>
+        <Input sx={{width:"180px", mr:"20px", borderRadius:"20px", border:"2px solid #8A00F7"}} />
         </Stack>
         {/* Disneyland Paris */}
         <Stack
