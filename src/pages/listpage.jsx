@@ -1,4 +1,10 @@
-import { Stack, Typography, Input, Button } from "@mui/joy";
+import { Stack, Typography, Input, Button, Box } from "@mui/joy";
+import { IoIosStarOutline } from "react-icons/io";
+// import { IoIosStar } from "react-icons/io";
+import { FaRegEdit } from "react-icons/fa";
+// import { FaEdit } from "react-icons/fa";
+import { RiDeleteBin2Line } from "react-icons/ri";
+// import { RiDeleteBin2Fill } from "react-icons/ri";
 
 export const ListPage = () => {
   return (
@@ -45,6 +51,24 @@ export const ListPage = () => {
             }}
             placeholder="Search List"
           />
+        </Stack>
+        <Stack>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-around",
+              border: "10px black solid",
+              width: "100%",
+            }}
+          >
+            <Typography sx={{ color: "#6402b2" }}>List Name</Typography>
+            <Stack sx={{ flexDirection: "row", gap: "15px" }}>
+              <IoIosStarOutline color="#6402b2" />
+              <FaRegEdit color="#6402b2" />
+              <RiDeleteBin2Line color="#6402b2" />
+            </Stack>
+          </Box>
         </Stack>
       </Stack>
     </Stack>
