@@ -1,5 +1,5 @@
 import { Stack, Typography, Input, Button, Box } from "@mui/joy";
-import { IoIosStarOutline } from "react-icons/io";
+import { FaRegStar } from "react-icons/fa";
 // import { IoIosStar } from "react-icons/io";
 import { FaRegEdit } from "react-icons/fa";
 // import { FaEdit } from "react-icons/fa";
@@ -52,24 +52,27 @@ export const ListPage = () => {
             placeholder="Search List"
           />
         </Stack>
-        <Stack>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-around",
-              border: "10px black solid",
-              width: "100%",
-            }}
-          >
-            <Typography sx={{ color: "#6402b2" }}>List Name</Typography>
-            <Stack sx={{ flexDirection: "row", gap: "15px" }}>
-              <IoIosStarOutline color="#6402b2" />
-              <FaRegEdit color="#6402b2" />
-              <RiDeleteBin2Line color="#6402b2" />
-            </Stack>
-          </Box>
-        </Stack>
+      </Stack>
+      <Stack sx={{alignItems:"center"}}>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-around",
+            border: "2px solid #6402b2",
+            width: "60%",
+            boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.2)",
+            height: 55,
+            borderRadius: "5px",
+          }}
+        >
+          <Typography sx={{ color: "#6402b2" }}>ListSS Name</Typography>
+          <Stack sx={{ flexDirection: "row", gap: "25px", alignItems:"center" }}>
+          <FaRegStar style={{ color: "#6402b2", fontSize: "25px" }} />
+          <FaRegEdit style={{ color: "#6402b2", fontSize: "25px" }} />
+          <RiDeleteBin2Line style={{ color: "#6402b2", fontSize: "25px" }} />
+          </Stack>
+        </Box>
       </Stack>
     </Stack>
   );
