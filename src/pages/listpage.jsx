@@ -66,7 +66,7 @@ export const ListPage = () => {
             borderRadius: "5px",
           }}
         >
-          <Typography sx={{ color: "#6402b2" }}>ListSS Name</Typography>
+          <Typography sx={{ color: "#6402b2" }}>List Name</Typography>
           <Stack sx={{ flexDirection: "row", gap: "25px", alignItems:"center" }}>
           <FaRegStar style={{ color: "#6402b2", fontSize: "25px" }} />
           <FaRegEdit style={{ color: "#6402b2", fontSize: "25px" }} />
