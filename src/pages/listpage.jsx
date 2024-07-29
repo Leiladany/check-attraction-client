@@ -1,12 +1,13 @@
+import React, { useState } from "react";
 import { Stack, Typography, Input, Button, Box } from "@mui/joy";
-import { FaRegStar } from "react-icons/fa";
-import { FaStar } from "react-icons/fa";
-import { FaRegEdit } from "react-icons/fa";
-// import { FaEdit } from "react-icons/fa";
-import { RiDeleteBin2Line } from "react-icons/ri";
-// import { RiDeleteBin2Fill } from "react-icons/ri";
+import { FaRegStar, FaStar, FaRegEdit, FaEdit } from "react-icons/fa";
+import { RiDeleteBin2Line, RiDeleteBin2Fill } from "react-icons/ri";
 
 export const ListPage = () => {
+  const [isStarHovered, setIsStarHovered] = useState(false);
+  const [isEditHovered, setIsEditHovered] = useState(false);
+  const [isDeleteHovered, setIsDeleteHovered] = useState(false);
+
   return (
     <Stack sx={{ gap: { xs: 1, lg: 3 } }}>
       <Stack
@@ -53,7 +54,7 @@ export const ListPage = () => {
           />
         </Stack>
       </Stack>
-      <Stack sx={{alignItems:"center"}}>
+      <Stack sx={{ alignItems: "center" }}>
         <Box
           sx={{
             display: "flex",
@@ -67,11 +68,42 @@ export const ListPage = () => {
           }}
         >
           <Typography sx={{ color: "#6402b2" }}>List Name</Typography>
-          <Stack sx={{ flexDirection: "row", gap: "25px", alignItems:"center" }}>
-          <FaRegStar style={{ color: "#6402b2", fontSize: "25px" }} />
-          <FaStar />
-          <FaRegEdit style={{ color: "#6402b2", fontSize: "25px" }} />
-          <RiDeleteBin2Line style={{ color: "#6402b2", fontSize: "25px" }} />
+          <Stack
+            sx={{ flexDirection: "row", gap: "25px", alignItems: "center" }}
+          >
+            <Box
+              onMouseEnter={() => setIsStarHovered(true)}
+              onMouseLeave={() => setIsStarHovered(false)}
+              sx={{ fontSize: "25px" }}
+            >
+              {isStarHovered ? (
+                <FaStar style={{ color: "#6402b2" }} />
+              ) : (
+                <FaRegStar style={{ color: "#6402b2" }} />
+              )}
+            </Box>
+            <Box
+              onMouseEnter={() => setIsEditHovered(true)}
+              onMouseLeave={() => setIsEditHovered(false)}
+              sx={{ fontSize: "25px" }}
+            >
+              {isEditHovered ? (
+                <FaEdit style={{ color: "#6402b2" }} />
+              ) : (
+                <FaRegEdit style={{ color: "#6402b2" }} />
+              )}
+            </Box>
+            <Box
+              onMouseEnter={() => setIsDeleteHovered(true)}
+              onMouseLeave={() => setIsDeleteHovered(false)}
+              sx={{ fontSize: "25px" }}
+            >
+              {isDeleteHovered ? (
+                <RiDeleteBin2Fill style={{ color: "#6402b2" }} />
+              ) : (
+                <RiDeleteBin2Line style={{ color: "#6402b2" }} />
+              )}
+            </Box>
           </Stack>
         </Box>
       </Stack>
