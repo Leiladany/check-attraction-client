@@ -1,6 +1,6 @@
 import { Stack, Typography, Input, Button, Box } from "@mui/joy";
 import { FaRegStar } from "react-icons/fa";
-// import { IoIosStar } from "react-icons/io";
+import { FaStar } from "react-icons/fa";
 import { FaRegEdit } from "react-icons/fa";
 // import { FaEdit } from "react-icons/fa";
 import { RiDeleteBin2Line } from "react-icons/ri";
@@ -69,6 +69,7 @@ export const ListPage = () => {
           <Typography sx={{ color: "#6402b2" }}>List Name</Typography>
           <Stack sx={{ flexDirection: "row", gap: "25px", alignItems:"center" }}>
           <FaRegStar style={{ color: "#6402b2", fontSize: "25px" }} />
+          <FaStar />
           <FaRegEdit style={{ color: "#6402b2", fontSize: "25px" }} />
           <RiDeleteBin2Line style={{ color: "#6402b2", fontSize: "25px" }} />
           </Stack>
