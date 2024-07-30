@@ -67,7 +67,7 @@ export const ListPage = () => {
             borderRadius: "5px",
           }}
         >
-          <Typography sx={{ color: "#6402b2" }}>List Name</Typography>
+          <Typography sx={{ color: "#6402b2" }}>Lists Name</Typography>
           <Stack
             sx={{ flexDirection: "row", gap: "25px", alignItems: "center" }}
           >
