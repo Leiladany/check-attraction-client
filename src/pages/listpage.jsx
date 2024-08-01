@@ -74,7 +74,7 @@ export const ListPage = () => {
             <Box
               onMouseEnter={() => setIsStarHovered(true)}
               onMouseLeave={() => setIsStarHovered(false)}
-              sx={{ fontSize: "25px" }}
+              sx={{ fontSize: "25px", cursor:"pointer" }}
             >
               {isStarHovered ? (
                 <FaStar style={{ color: "#6402b2" }} />
@@ -85,7 +85,7 @@ export const ListPage = () => {
             <Box
               onMouseEnter={() => setIsEditHovered(true)}
               onMouseLeave={() => setIsEditHovered(false)}
-              sx={{ fontSize: "25px" }}
+              sx={{ fontSize: "25px", cursor:"pointer" }}
             >
               {isEditHovered ? (
                 <FaEdit style={{ color: "#6402b2" }} />
@@ -96,7 +96,7 @@ export const ListPage = () => {
             <Box
               onMouseEnter={() => setIsDeleteHovered(true)}
               onMouseLeave={() => setIsDeleteHovered(false)}
-              sx={{ fontSize: "25px" }}
+              sx={{ fontSize: "25px", cursor:"pointer" }}
             >
               {isDeleteHovered ? (
                 <RiDeleteBin2Fill style={{ color: "#6402b2" }} />
