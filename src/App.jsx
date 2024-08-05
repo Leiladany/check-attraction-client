@@ -6,6 +6,7 @@ import { HomePage } from "./pages/homepage";
 import { About } from "./pages/about";
 import { ThemeParks } from "./pages/themeparks";
 import { ListPage } from "./pages/listpage";
+import { CreateList } from "./pages/createlist";
 
 export const App = () => {
   return (
@@ -16,6 +17,7 @@ export const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/themeparks" element={<ThemeParks />} />
         <Route path="/listpage" element={<ListPage />} />
+        <Route path="/createlist" element={<CreateList />} />
       </Routes>
       <Footer />
     </>
