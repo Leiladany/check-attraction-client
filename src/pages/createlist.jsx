@@ -21,7 +21,7 @@ export const CreateList = () => {
             alignItems: "center",
             justifyContent: "space-around",
             border: "3px solid #6402b2",
-            width: "60%",
+            width: "61%",
             boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.2)",
             height: 55,
             borderRadius: "5px",
