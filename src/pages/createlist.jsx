@@ -23,7 +23,7 @@ export const CreateList = () => {
             border: "4px solid #6402b2",
             width: "61%",
             boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.2)",
-            height: 56,
+            height: 55,
             borderRadius: "5px",
             padding: "0 10px",
           }}
