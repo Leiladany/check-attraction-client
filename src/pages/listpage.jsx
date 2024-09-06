@@ -96,7 +96,7 @@ export const ListPage = () => {
             <Box
               onMouseEnter={() => setIsDeleteHovered(true)}
               onMouseLeave={() => setIsDeleteHovered(false)}
-              sx={{ fontSize: "26px", cursor:"pointer" }}
+              sx={{ fontSize: "25px", cursor:"pointer" }}
             >
               {isDeleteHovered ? (
                 <RiDeleteBin2Fill style={{ color: "#6402b2" }} />
